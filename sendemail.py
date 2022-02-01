@@ -8,14 +8,14 @@ from email.mime.text import MIMEText
 
 # me == my email address
 # you == recipient's email address
-me = 'lfbnotifierbot@gmail.com'
+me = ''
 
 
 # Create message container - the correct MIME type is multipart/alternative.
 msg = MIMEMultipart('alternative')
 msg['Subject'] = "Link"
 msg['From'] = me
-msg['To'] = 'idiiace@gmail.com'
+msg['To'] = ''
 
 # Create the body of the message (a plain-text and an HTML version).
 text = "Hi!\nHow are you?\nHere is the link you wanted:\nhttp://www.python.org"
@@ -50,7 +50,7 @@ def send_email(message):
     password = ''
 
 
-    to = ['idiiboy254@gmail.com','peteryonko4@gmail.com']
+    to = []
 
 
     smtp_server = "smtp.gmail.com"
